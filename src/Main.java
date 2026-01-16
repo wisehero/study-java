@@ -4,24 +4,22 @@ public class Main {
 
 	public static void main(String[] args) {
 
-	}
+		String s = "43 + 12";
+		String[] split = s.split(" ");
+		int a = Integer.parseInt(split[0]);
+		String op = split[1];
+		int b = Integer.parseInt(split[2]);
 
-	public int[] solution(int[] arr, int[] delete_list) {
-		List<Integer> list = new ArrayList<>();
-
-		Set<Integer> set = new HashSet<>();
-		for (int e : delete_list) {
-			set.add(e);
+		switch (op) {
+			case "+":
+				System.out.println(a + b);
+				break;
+			case "-":
+				System.out.println(a - b);
+				break;
+			case "*":
+				System.out.println(a * b);
 		}
-
-		for (int e : arr) {
-			if (!set.contains(e)) {
-				list.add(e);
-			}
-		}
-
-		return list.stream()
-			.mapToInt(i -> i)
-			.toArray();
+		System.out.println(Arrays.toString(split));
 	}
 }
