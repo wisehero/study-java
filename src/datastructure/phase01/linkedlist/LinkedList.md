@@ -1,5 +1,15 @@
 # 📑 자바 자료구조 학습 노트
 
+## 목차
+1. [LinkedList의 본질](#1-linkedlist의-본질)
+2. [Node 구조](#2-node-구조)
+3. [삽입과 삭제](#3-삽입과-삭제)
+4. [탐색의 비용](#4-탐색의-비용)
+5. [ArrayList vs LinkedList](#5-arraylist-vs-linkedlist)
+6. [총정리 요약](#-phase-1-3-linkedlist-총정리-요약)
+
+---
+
 ## 1. LinkedList의 본질
 
 > ### 📌 핵심 질문: "연결 리스트란 무엇인가?"
